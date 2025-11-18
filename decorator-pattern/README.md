@@ -1,48 +1,48 @@
 ## ☕ Decorator Pattern - Class Diagram (Coffee Shop Example)
 
-           +----------------------+
-           |      Beverage        |   ← Component interface
-           +----------------------+
-           | + getDescription()   |
-           | + cost()             |
-           +----------------------+
-                      ^
-                      |
-        +-------------+--------------+
-        |                            |
-+--------------------+    +--------------------+
-|     Espresso       |    |    HouseBlend      |   ← Concrete Components
-+--------------------+    +--------------------+
-| + getDescription() |    | + getDescription() |
-| + cost()           |    | + cost()           |
-+--------------------+    +--------------------+
+                      +----------------------+
+                      |      Beverage        |   ← Component interface
+                      +----------------------+
+                      | + getDescription()   |
+                      | + cost()             |
+                      +----------------------+
+                                 ^
+                                 |
+                   +-------------+--------------+
+                   |                            |
+           +--------------------+    +--------------------+
+           |     Espresso       |    |    HouseBlend      |   ← Concrete Components
+           +--------------------+    +--------------------+
+           | + getDescription() |    | + getDescription() |
+           | + cost()           |    | + cost()           |
+           +--------------------+    +--------------------+
 
-                      ^
-                      |
-              +-------------------+
-              |  AddOnDecorator   |   ← Abstract Decorator
-              +-------------------+
-              | - beverage: Beverage |
-              +-------------------+
-                      ^
-                      |
-        +-----------------------+
-        |   MilkDecorator       |
-        +-----------------------+
-        | + getDescription()    |
-        | + cost()              |
-        +-----------------------+
-        |   SugarDecorator      |
-        +-----------------------+
-        | + getDescription()    |
-        | + cost()              |
-        +-----------------------+
-        | WhippedCreamDecorator |
-        +-----------------------+
-        | + getDescription()    |
-        | + cost()              |
-        +-----------------------+
-
+                                 ^
+                                 |
+                         +-------------------+
+                         |  AddOnDecorator   |   ← Abstract Decorator
+                         +-------------------+
+                         | - beverage: Beverage |
+                         +-------------------+
+                                 ^
+                                 |
+                   +-----------------------+
+                   |   MilkDecorator       |
+                   +-----------------------+
+                   | + getDescription()    |
+                   | + cost()              |
+                   +-----------------------+
+                   |   SugarDecorator      |
+                   +-----------------------+
+                   | + getDescription()    |
+                   | + cost()              |
+                   +-----------------------+
+                   | WhippedCreamDecorator |
+                   +-----------------------+
+                   | + getDescription()    |
+                   | + cost()              |
+                   +-----------------------+
+           
 | #     | Use Case                              | Description                                                                |
 | ----- | ------------------------------------- | -------------------------------------------------------------------------- |
 | **1** | **Java I/O Streams**                  | `BufferedInputStream`, `DataInputStream` decorate a base `InputStream`.    |
