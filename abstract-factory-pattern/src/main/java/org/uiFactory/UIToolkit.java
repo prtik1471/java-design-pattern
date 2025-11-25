@@ -1,6 +1,7 @@
-package org.uiFactory.textField;
+package org.uiFactory;
 
 import org.uiFactory.button.Button;
+import org.uiFactory.textField.TextField;
 
 public class UIToolkit {
     Button button;

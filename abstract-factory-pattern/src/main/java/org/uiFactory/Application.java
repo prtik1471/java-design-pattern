@@ -1,9 +1,5 @@
 package org.uiFactory;
 
-import org.uiFactory.button.Button;
-import org.uiFactory.textField.TextField;
-import org.uiFactory.textField.UIToolkit;
-
 public class Application {
     public static void main(String[] args) {
         UIToolkit uiToolkit = new UIToolkit();
@@ -20,6 +16,5 @@ public class Application {
         final UIFactory uiFactory = FactoryMaker.makeFactory(type);
         uiToolkit.setButton(uiFactory.createButton());
         uiToolkit.setTextField(uiFactory.createTextField());
-        return;
     }
 }
