@@ -19,6 +19,8 @@
         <module>adapter-pattern</module>
         <module>adapter-pattern</module>
         <module>facade-pattern</module>
+        <module>proxy-pattern</module>
+        <module>proxy-pattern/simpleAccessControl</module>
     </modules>
 
     <properties>
